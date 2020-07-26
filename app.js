@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
     });
 });*/
 
-app.get('/test', function (req, res) {
+app.get('/', function (req, res) {
     res.send("Hello World out")
 });
 app.listen(port, () => console.log("Server is running..on port " + port));
