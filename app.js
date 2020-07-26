@@ -13,7 +13,7 @@ const port=process.env.PORT || 3000;
     };
 
     // connect to your database
-/*    sql.connect(config, function (err) {
+    sql.connect(config, function (err) {
     
         if (err) console.log(err);
 
@@ -34,8 +34,8 @@ app.get('/', function (req, res) {
         });
     });
 });
-*/
-app.get('/', function (req, res) {
+
+app.get('/test', function (req, res) {
     res.send("Hello World Again")
 });
 app.listen(port, () => console.log("Server is running..on port " + port));
