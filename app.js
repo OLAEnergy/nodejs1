@@ -18,7 +18,7 @@ const port=process.env.PORT || 3000;
         if (err) console.log(err);
 
         // create Request object
-        var request = new sql.Request();
+       /* var request = new sql.Request();
            
         // query to the database and get the records
         request.query('SELECT top (2) IDCUST,NAMECUST FROM LTNTST.dbo.ARCUS', function (err, recordset) {
@@ -26,16 +26,16 @@ const port=process.env.PORT || 3000;
 app.get('/', function (req, res) {
    
     
-            if (err) res.send(err);
+             if (err) console.log(err)
 
             // send records as a response
             res.send(recordset);
             
         });
-    });
+    });*/
 });
 
-/*app.get('/test', function (req, res) {
-    res.send("Hello World Again")
-});*/
+app.get('/test', function (req, res) {
+    res.send("Hello World out")
+});
 app.listen(port, () => console.log("Server is running..on port " + port));
