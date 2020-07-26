@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var sql = require("mssql");
+//var sql = require("mssql");
 const port=process.env.PORT || 3000;
 
 
@@ -35,4 +35,7 @@ app.get('/', function (req, res) {
     });
 });
 */
+app.get('/', function (req, res) {
+    res.send("Hello World Again")
+});
 app.listen(port, () => console.log("Server is running..on port " + port));
