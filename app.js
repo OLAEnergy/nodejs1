@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var sql = require("mssql");
+//var sql = require("mssql");
 const port=process.env.PORT || 3000;
 
 
