@@ -26,7 +26,7 @@ const port=process.env.PORT || 3000;
 app.get('/', function (req, res) {
    
     
-            if (err) console.log(err)
+            if (err) res.send(err);
 
             // send records as a response
             res.send(recordset);
