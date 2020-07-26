@@ -13,12 +13,12 @@ const port=process.env.PORT || 3000;
     };
 
     // connect to your database
-    sql.connect(config, function (err) {
+    /*sql.connect(config, function (err) {
     
         if (err) console.log(err);
 
         // create Request object
-       /* var request = new sql.Request();
+        var request = new sql.Request();
            
         // query to the database and get the records
         request.query('SELECT top (2) IDCUST,NAMECUST FROM LTNTST.dbo.ARCUS', function (err, recordset) {
@@ -32,8 +32,8 @@ app.get('/', function (req, res) {
             res.send(recordset);
             
         });
-    });*/
-});
+    });
+});*/
 
 app.get('/test', function (req, res) {
     res.send("Hello World out")
